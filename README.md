@@ -129,7 +129,7 @@ To use different GPIO mappings refer to the sections below
 
 #### Easy WAV Player example
 The file `easy_wav_player.py` contains an easy-to-use micropython example for playing WAV files.  This example requires
-an SD card (to store the WAV files).  Pyboards have a built in SD card.  Some ESP32 development boards have a built-in SD Card, such as the Lolin D32 Pro.  Other devices, such as the TinyPico and Raspberry Pi Pico require an external SD card module to be wired in.  Additionally, for the Raspberry Pi Pico [sdcard.py](https://github.com/micropython/micropython/blob/master/drivers/sdcard/sdcard.py) needs to be copied to the Pico's filesystem to enable SD card support.
+an SD card (to store the WAV files).  Pyboards have a built in SD card.  Some ESP32 development boards have a built-in SD Card, such as the Lolin D32 Pro.  Other devices, such as the TinyPico and Raspberry Pi Pico require an external SD card module to be wired in.  Additionally, for the Raspberry Pi Pico [sdcard.py](https://github.com/micropython/micropython-lib/blob/master/micropython/drivers/storage/sdcard/sdcard.py) needs to be copied to the Pico's filesystem to enable SD card support.
 
 Instructions
 1. Wire up the hardware.  e.g.  connect the I2S playback module to the development board, and connect an external SD Card Module (if needed).  See tips on hardware wiring below.  The example uses the default GPIO pins outlined above.  These can 
